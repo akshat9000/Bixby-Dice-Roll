@@ -1,0 +1,26 @@
+result-view {
+  match {
+    RollResultConcept (rollResult)
+  }
+
+  render {
+    layout {
+      section {
+        content {
+          single-line {
+            text {
+              style (Detail_M)
+              value ("Sum: #{value(rollResult.sum)}")
+            }
+          }
+          single-line {
+            text {
+              style (Detail_M)
+              value ("The rolls are #{value(rollResult.roll)}")
+            }
+          }
+        }
+      }
+    }
+  }
+}

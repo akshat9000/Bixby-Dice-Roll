@@ -1,0 +1,3 @@
+integer (SumConcept) {
+  description (Sum of the numbers of the 2 dies)
+}

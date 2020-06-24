@@ -1,0 +1,13 @@
+dialog (Result) {
+  match {
+    RollResultConcept (rollResult)
+  }
+
+  if (rollResult.snakeeyes) {
+    template("Snake Eyes! The sum is #{value(rollResult.sum)} and you've rolled #{value(rollResult.roll)}")
+  }
+  else-if (!rollResult.snakeeyes) {
+    template("The sum is #{value(rollResult.sum)} and you've rolled #{value(rollResult.roll)}")
+  }
+  // template("You've rolled #{value(rollResult.roll)}")
+}

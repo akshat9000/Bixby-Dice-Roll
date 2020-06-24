@@ -1,0 +1,5 @@
+action (RollDice) {
+  type (Calculation)
+  description (Gives the output of the 2 rolls)
+  output (RollResultConcept)
+}

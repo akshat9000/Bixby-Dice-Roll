@@ -1,0 +1,21 @@
+structure (RollResultConcept) {
+  description (Result object produced by the RollDice javascript file)
+  property (sum) {
+    description (Sum of the 2 dies)
+    type (SumConcept)
+    min (Required) 
+    max (One)
+  }
+  property (roll){
+    description (Rolls of the 2 dies)
+    type (RollConcept)
+    min (Required)
+    max (Many)
+  }
+  property (snakeeyes){
+    description (One on both dies)
+    type (SnakeConcept)
+    min (Optional)
+    max (One)
+  }
+}
